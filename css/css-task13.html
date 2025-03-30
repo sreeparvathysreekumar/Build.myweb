@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" initial-scale=1.0>
+        <title>CSS 13</title>
+        <style>
+            .main{
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+            .box{
+                width: 100px;
+                height: 80px;
+                border: 1px groove lightgray;
+            }
+            .hidebox{
+                width: 100px;
+                height: 80px;
+                border: 1px solid white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            <h2>Arrange Boxes in like a frame</h2>
+            <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            </div>
+            <div class="row">
+            <div class="box"></div>
+            <div class="hidebox"></div>
+            <div class="hidebox"></div>
+            <div class="box"></div>
+            </div>
+            <div class="row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </body>
+</html>
