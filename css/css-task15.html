@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS 15</title>
+        <style>
+            body{
+                background-image: url(image.jpg);
+                background-size: cover;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 60px;
+                height: 100vh;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .container{
+                background-color: white;
+                padding: 30px;
+                margin-top: 100px;
+                margin-bottom: 140px;
+                padding-left: 10px;
+                width: 420px;
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-self: center;
+                align-items: center;
+            }
+            h1{
+                text-align: center;
+                margin-bottom: 0px;
+            }
+            input{
+                width: 100%;
+                padding: 10px;
+                margin: 10px;
+                border: 1px solid white;
+                color: gray;
+                border-radius: 30px;
+            }
+            button{
+                width: 100%;
+                padding: 10px;
+                background-color: rgb(30, 31, 31);
+                border-color: black;
+            }
+            .list{
+                text-align: left;
+            }
+            .form{
+                padding: 10px;
+                background-color: white;
+                width: fit-content;
+                text-align: left;
+            }
+            .cus{
+                background-color: lightgray;
+            }
+            label{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <form class="form">
+                <h2>Sign Up</h2>
+                <hr width="100%">
+                <label class="list">FIRST NAME</label>
+                <input type="text" placeholder="Enter first name" class="cus"><br>
+                <label>LAST NAME</label>
+                <input type="text" placeholder="Enter last name" class="cus"><br>
+                <label>DATE OF BIRTH</label>
+                <input type="date" class="cus"><br>
+                <label>EMAIL</label>
+                <input type="email" placeholder="Enter email" class="cus"><br>
+                <label>PASSWORD</label>
+                <input type="password" placeholder="Repeat password" class="cus"><br>
+                <label>CONFIRM PASSWORD</label>
+                <input type="text" placeholder="Repeat password" class="cus"><br>
+                <hr width="100%">
+                <br>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
