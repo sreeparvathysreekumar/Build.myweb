@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LunarLearn - STEM & Space Tutoring</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: black;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar {
+      background-color: black;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1605559424843-01e8e3e4db6e?fit=crop&w=1950&q=80') center/cover no-repeat;
+      padding: 120px 20px;
+      text-align: center;
+      color: white;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.25rem;
+    }
+    .rocket {
+      width: 60px;
+      animation: launch 3s ease-in-out forwards;
+    }
+    @keyframes launch {
+      0% {transform: translateY(100px); opacity: 0;}
+      100% {transform: translateY(0); opacity: 1;}
+    }
+    .features-section {
+      padding: 60px 20px;
+      background-color: black;
+    }
+    .about-section {
+      background-color: #21262d;
+      padding: 60px 20px;
+    }
+    .about-card {
+      background-color: #2d333b;
+      padding: 30px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      height: 100%;
+    }
+    .contact-section {
+      background-color: #1c2128;
+      padding: 60px 20px;
+    }
+    .contact-section input,
+    .contact-section textarea {
+      margin-bottom: 15px;
+    }
+    .scroll-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: purple;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+    }
+    .feature-card {
+      background-color: #2d333b;
+      padding: 25px;
+      border-radius: 10px;
+      height: 100%;
+      margin-bottom: 20px;
+    }
+    .testimonials-section {
+      padding: 60px 20px;
+      background-color: #161b22;
+    }
+    .testimonial-card {
+      background-color: #2d333b;
+      padding: 25px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">LunarLearn</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <img src="rocket.jpeg" alt="Rocket" class="rocket">
+  <h1 class="mt-4">LunarLearn</h1>
+  <p>Online STEM and space tutoring for students.</p>
+  <a href="#contact" class="btn btn-danger mt-3">Book a Lesson</a>
+</section>
+
+<!-- Image Section -->
+<section class="text-center py-5 bg-dark">
+  <div class="container">
+    <img src="banner.jpeg" class="img-fluid rounded" alt="STEM Banner">
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+  <div class="container text-center">
+    <h2 class="mb-5">About LunarLearn</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="about-card">
+          <h4>STEM Through Space</h4>
+          <p>LunarLearn is a dedicated online tutoring platform focusing on STEM education through the fascinating lens of space science. We inspire young minds with engaging, interactive, and meaningful learning experiences.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="about-card">
+          <h4>Real-World Connections</h4>
+          <p>Our lessons connect abstract STEM concepts to real-world space exploration through simulations, videos, and live discussions. This makes science relatable and exciting for students of all levels.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="about-card">
+          <h4>Future Explorers</h4>
+          <p>LunarLearn helps build a solid foundation in scientific thinking, preparing students for future careers in science and technology. We aim to fuel the curiosity of the next generation of explorers.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section id="features" class="features-section text-center">
+  <div class="container">
+    <h2 class="mb-5">Why Choose LunarLearn?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h4>Expert Tutors</h4>
+          <p>Learn from professionals passionate about space education who bring real-world experience into the virtual classroom.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h4>Interactive Learning</h4>
+          <p>Explore moon phases, rocket science, and more using hands-on activities and simulations designed to spark curiosity.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="feature-card">
+          <h4>Flexible Timing</h4>
+          <p>Study at your own pace with personalized schedules that suit both school commitments and personal interests.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="py-5">
+    <div class="container text-center">
+      <h2 class="mb-4">Our Key Features</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <div class="feature-icon">🚀</div>
+            <h5>Interactive Tutoring</h5>
+            <p>Live sessions with visual tools and science experiments.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <div class="feature-icon">🌕</div>
+            <h5>Space-Themed Curriculum</h5>
+            <p>Learn physics, astronomy, and engineering through space missions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="p-4 border rounded">
+            <div class="feature-icon">👩‍🚀</div>
+            <h5>Certified Tutors</h5>
+            <p>Experts from top institutes and space research centers.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section id="testimonials" class="testimonials-section text-center">
+  <div class="container">
+    <h2 class="mb-5">What People Are Saying About LunarLearn</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"My son absolutely loves learning about space now. The tutors make science so much fun and engaging!"</p>
+          <h6>- Priya S., Parent</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"LunarLearn helped me understand STEM concepts much better than my regular classes. Highly recommend!"</p>
+          <h6>- Arjun M., Student</h6>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="testimonial-card">
+          <p>"Fantastic program! The flexibility and creativity in their lessons are unmatched."</p>
+          <h6>- Divya T., Educator</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Space Images Layered Section -->
+<section class="py-5 bg-dark text-center position-relative overflow-hidden">
+  <div class="container position-relative" style="z-index: 2;">
+    <h2 class="text-white mb-4">Explore the Universe</h2>
+  </div>
+  <div class="position-absolute top-0 start-0 w-100 h-100" style="z-index: 1; opacity: 0.1;">
+    <img src="galaxy.jpeg" class="w-100 h-100 object-fit-cover" alt="Galaxy Background">
+  </div>
+  <div class="container position-relative" style="z-index: 3;">
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-4">
+        <img src="space nebula.jpeg" alt="Space Nebula" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6 mb-4">
+        <img src="view.jpeg" alt="Astronaut View" class="img-fluid rounded shadow">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2 class="text-center">Contact Us</h2>
+    <form class="mt-4">
+      <div class="row">
+        <div class="col-md-6">
+          <input type="text" class="form-control" placeholder="Your Name" required>
+        </div>
+        <div class="col-md-6">
+          <input type="email" class="form-control" placeholder="Your Email" required>
+        </div>
+      </div>
+      <textarea class="form-control mt-3" rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn btn-danger mt-3" onclick="alert('Thank you! We will get in touch soon.')">Submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center text-white py-4 bg-black">
+  <p>&copy; 2025 LunarLearn. All rights reserved.</p>
+</footer>
+
+
+<button class="scroll-top" onclick="scrollToTop()">&#8679;</button>
+
+<script>
+  const scrollBtn = document.querySelector('.scroll-top');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) scrollBtn.style.display = 'block';
+    else scrollBtn.style.display = 'none';
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
